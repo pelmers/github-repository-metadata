@@ -131,11 +131,21 @@ def get_repo_data(stars_fmt, date_fmt):
             forkCount
             isArchived
             languages(first: 10, orderBy: {field:SIZE, direction: DESC}) {
+              totalCount
               nodes {
                 name
               }
               edges {
                 size
+              }
+            }
+            repositoryTopics(first: 10) {
+              totalCount
+            	nodes {
+                topic {
+                  name
+                  stargazerCount
+                }
               }
             }
             diskUsage
@@ -235,6 +245,12 @@ def convert_to_json(result):
                 deep_get(result, "node.languages.edges"),
             )
         ],
+        "languageCount": deep_get(result, "node.languages.totalCount"),
+        "topics": [
+            {"name": deep_get(topic, "topic.name"), "stars": deep_get(topic, "topic.stargazerCount")}
+            for topic in deep_get(result, "node.repositoryTopics.nodes")
+        ],
+        "topicCount": deep_get(result, "node.repositoryTopics.totalCount"),
         "diskUsageKb": deep_get(result, "node.diskUsage"),
         "pullRequests": deep_get(result, "node.pullRequests.totalCount"),
         "description": deep_get(result, "node.description"),

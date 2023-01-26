@@ -4,3 +4,4 @@ github_token
 
 checkpoints/
 repos*.json
+regions.pkl
