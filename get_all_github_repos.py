@@ -159,6 +159,9 @@ def get_repo_data(stars_fmt, date_fmt):
             pullRequests {
               totalCount
             }
+            issues {
+              totalCount
+            }
             description
             pushedAt
             primaryLanguage {
@@ -253,6 +256,7 @@ def convert_to_json(result):
         "topicCount": deep_get(result, "node.repositoryTopics.totalCount"),
         "diskUsageKb": deep_get(result, "node.diskUsage"),
         "pullRequests": deep_get(result, "node.pullRequests.totalCount"),
+        "issues": deep_get(result, "node.issues.totalCount"),
         "description": deep_get(result, "node.description"),
         "primaryLanguage": deep_get(result, "node.primaryLanguage.name"),
         "createdAt": deep_get(result, "node.createdAt"),
