@@ -3,6 +3,8 @@
 ## Introduction
 As an intermediate result of my master's project, I am sharing a dataset of all public Github
 repositories with at least 5 stars.
+It's available [here on Kaggle](https://www.kaggle.com/datasets/pelmers/github-repository-metadata-with-5-stars).
+
 This dataset is obtained from the Github API and contains only public repository-level metadata.
 It may be useful for anyone interested in studying the Github ecosystem.
 Please see the sample exploration notebook for some examples of what you can do!
