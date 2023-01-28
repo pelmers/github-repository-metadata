@@ -3,6 +3,9 @@
 ## Introduction
 As an intermediate result of my master's project, I am sharing a dataset of all public Github
 repositories with at least 5 stars.
+This dataset is obtained from the Github API and contains only public repository-level metadata.
+It may be useful for anyone interested in studying the Github ecosystem.
+Please see the sample exploration notebook for some examples of what you can do!
 
 ## Dataset
 The dataset is a JSON array of objects with the following fields:
@@ -60,11 +63,13 @@ The dataset is a JSON array of objects with the following fields:
 }
 ```
 
-## Contained Here
+## Details
 This repository contains two things:
-1. a script to create the dataset
-2. an example notebook to show how to use the dataset
-# TODO: colab button
+1. A script to create the dataset, `get_all_github_repos.py`
+2. An example notebook to show how to use the dataset, `explore_github_all_repos.ipynb`
+For more detailed background info, you can read [my blog post](pelmers.com/all-of-the-github/).
+
+The example notebook is also [available on Kaggle](https://www.kaggle.com/code/pelmers/explore-github-repository-metadata).
 
 ## Usage
 The script `get_all_github_repos.py` creates the dataset. To use it:
@@ -76,8 +81,8 @@ into regions to outwit the [Github API 1000 result limit](https://github.com/PyG
 5. If the script ends before completion, you can therefore resume with `python get_all_github_repos.py --resume regions.pkl`
 
 ## Citing
-This dataset is part of my master's thesis. As that has not been published yet,
-you can cite this repository instead.
+This dataset is part of my master's thesis. As that has not been published yet (or, for that matter, started),
+you can cite this repository instead for now.
 
 ## Terms
 The [Github API Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#h-api-terms) apply.
