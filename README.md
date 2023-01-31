@@ -69,7 +69,7 @@ The dataset is a JSON array of objects with the following fields:
 This repository contains two things:
 1. A script to create the dataset, `get_all_github_repos.py`
 2. An example notebook to show how to use the dataset, `explore_github_all_repos.ipynb`
-For more detailed background info, you can read [my blog post](pelmers.com/all-of-the-github/).
+For more detailed background info, you can read [my blog post](https://pelmers.com/all-of-the-github/).
 
 The example notebook is also [available on Kaggle](https://www.kaggle.com/code/pelmers/explore-github-repository-metadata).
 
