@@ -31,8 +31,6 @@ The dataset is a JSON array of objects with the following fields:
 - `pullRequests`: the total number of pull requests
 - `primaryLanguage`: the primary language of the repository
 - `languages`: the first 10 languages of the repository, a list of objects with the fields `name` and `size` (ordered by size)
-
-**The following fields are not in the initial release of the dataset, but have been added to the script for future releases**:
 - `topics`: the first 10 topics of the repository, a list of objects with the fields `name` and `stars`
 - `topicCount`: the number of topics the repository has
 - `languageCount`: the number of languages the repository has
@@ -43,14 +41,18 @@ The dataset is a JSON array of objects with the following fields:
 {
   "owner": "pelmers",
   "name": "text-rewriter",
-  "stars": 11,
-  "forks": 4,
-  "watchers": 3,
+  "stars": 13,
+  "forks": 5,
+  "watchers": 4,
   "isFork": false,
   "isArchived": false,
   "languages": [ { "name": "JavaScript", "size": 21769 }, { "name": "HTML", "size": 2096 }, { "name": "CSS", "size": 2081 } ],
+  "languageCount": 3,
+  "topics": [ { "name": "chrome-extension", "stars": 43211 } ],
+  "topicCount": 1,
   "diskUsageKb": 75,
   "pullRequests": 4,
+  "issues": 12,
   "description": "Webextension to rewrite phrases in pages",
   "primaryLanguage": "JavaScript",
   "createdAt": "2015-03-14T22:35:11Z",
