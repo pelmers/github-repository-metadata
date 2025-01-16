@@ -85,8 +85,20 @@ into regions to outwit the [Github API 1000 result limit](https://github.com/PyG
 5. If the script ends before completion, you can therefore resume with `python get_all_github_repos.py --resume regions.pkl`
 
 ## Citing
-This dataset is part of my master's thesis. As that has not been published yet (or, for that matter, started),
-you can cite this repository instead for now.
+This dataset is part of my master's thesis. You can cite it as below.
+```
+@mastersthesis{elmerscode,
+  title        = {Code and Comment Consistency Classification with Large Language Models},
+  author       = {Peter Elmers},
+  year         = 2023,
+  month        = {October},
+  address      = {Eindhoven, Netherlands},
+  note         = {Available at \url{https://research.tue.nl/files/319363283/Elmers_P.pdf}},
+  school       = {Eindhoven University of Technology},
+  type         = {Master's thesis}
+}
+```
+
 
 ## Terms
 The [Github API Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#h-api-terms) apply.
